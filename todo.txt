@@ -1,0 +1,1 @@
+- Look into HTML positioning to get text positioned the way you want it.
