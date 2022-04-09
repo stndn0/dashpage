@@ -1,0 +1,71 @@
+/* Load custom font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* Override CSS defaults */
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 1%;
+}
+
+/* Flexbox Navbar */
+.flex-nav {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px 3%;
+}
+
+
+#flex-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25vh;
+    /* height: 40vh; */
+    background-color: blanchedalmond;
+}
+
+#flex-main-dock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    background-color:aqua;
+}
+
+.flex-day {
+    background-color:azure;
+    font-size: 96px;
+    margin: 0px 0px;
+    /* margin-right: 10%;     */
+}
+.flex-date {
+    background-color:rgb(180, 214, 214);
+    margin: 0px 0px;
+    font-size: 64px;
+
+    
+}
+.flex-time {
+    background-color:rgb(159, 177, 177);
+    font-size: 96px;
+    margin: 0px 0px;
+}
+
+.flex-main-item {
+    background-color:azure;
+}
+
+/* .flex-main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
