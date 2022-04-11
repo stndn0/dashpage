@@ -57,12 +57,14 @@
     padding:0;
     line-height: 100%;
 }
-.flex-time {
+
+#time {
     font-size: 96px;
     margin: 0px 0px;
     margin-left: 20%;
-    line-height: 100%;
+    line-height: 100%; 
 }
+
 
 .flex-main-item {
     background-color:azure;
