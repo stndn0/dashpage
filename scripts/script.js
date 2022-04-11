@@ -1,7 +1,9 @@
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var currentTheme = "light";
 
 function time() {
+    // https://www.w3schools.com/js/js_date_methods.asp
     var date = new Date()
     var hour = date.getHours();
     var minute = date.getMinutes();
@@ -32,12 +34,14 @@ function time() {
 
     // Get the current day
     let day = days[date.getDay()];
-    document.getElementById("day").innerText = day;
+    document.getElementsByClassName("day")[0].innerText = day;
 
     // Get the current date and time
     let month = months[date.getMonth()];
-    document.getElementById("date").innerText = month + " " + date.getDate();
-    document.getElementById("time").innerText = hour + ":" + minute + " " + format;
+    document.getElementsByClassName("date")[0].innerText = month + " " + date.getDate();
+    // document.getElementById("date").innerText = month + " " + date.getDate();
+    document.getElementsByClassName("time")[0].innerText = hour + ":" + minute + " " + format;
+    // document.getElementById("time").innerText = hour + ":" + minute + " " + format;
 
     // Update the clock every second
     setTimeout(time, 1000)
@@ -52,5 +56,10 @@ function update(t) {
     }
 }
 
+function toggleDarkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    currentTheme = "dark";
+}
 
 time();

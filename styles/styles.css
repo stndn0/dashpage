@@ -1,6 +1,7 @@
 /* Load custom font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
+
 /* Override CSS defaults */
 * {
     font-family: 'Inter', sans-serif;
@@ -13,13 +14,26 @@
     margin-top: 1%;
 }
 
-/* Flexbox Navbar */
+/* create css variables */
+body {
+    --col-textbg: #ffebcd;
+}
+
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    --col-textbg: #ff0000;
+}
+
+/* Flexbox Navbar class */
 .flex-nav {
     display: flex;
     justify-content: flex-start;
     padding: 0px 3%;
 }
 
+/* Container id */
 #flex-main-container {
     display: flex;
     flex-direction: column;
@@ -35,31 +49,32 @@
     justify-content: center;
     align-items: center;
     margin-top: 5%;
-    background-color: blanchedalmond;
+    background-color: var(--col-textbg);
 }
+ 
 
 #flex-day-date{
     margin-right: 20%;
 }
 
 
-#day {
-
+.day {
     font-size: 96px;
     margin:0;
     padding:0;
     line-height: 100%;
 }
-#date {
+.date {
     font-size: 64px;
     margin:0;
     padding:0;
     line-height: 100%;
 }
 
-#time {
+.time {
     font-size: 96px;
     margin: 0px 0px;
     margin-left: 20%;
     line-height: 100%; 
 }
+
