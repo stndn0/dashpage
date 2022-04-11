@@ -28,7 +28,6 @@
     align-items: center;
     margin-top: 25vh;
     /* height: 40vh; */
-    background-color: blanchedalmond;
 }
 
 #flex-main-dock {
@@ -37,26 +36,32 @@
     justify-content: center;
     align-items: center;
     margin-top: 5%;
-    background-color:aqua;
+    background-color: blanchedalmond;
 }
 
-.flex-day {
-    background-color:azure;
+#flex-day-date{
+    margin-right: 20%;
+}
+
+
+.day {
+
     font-size: 96px;
-    margin: 0px 0px;
-    /* margin-right: 10%;     */
+    margin:0;
+    padding:0;
+    line-height: 100%;
 }
-.flex-date {
-    background-color:rgb(180, 214, 214);
-    margin: 0px 0px;
+.date {
     font-size: 64px;
-
-    
+    margin:0;
+    padding:0;
+    line-height: 100%;
 }
 .flex-time {
-    background-color:rgb(159, 177, 177);
     font-size: 96px;
     margin: 0px 0px;
+    margin-left: 20%;
+    line-height: 100%;
 }
 
 .flex-main-item {
