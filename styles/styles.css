@@ -20,7 +20,6 @@
     padding: 0px 3%;
 }
 
-
 #flex-main-container {
     display: flex;
     flex-direction: column;
@@ -44,14 +43,14 @@
 }
 
 
-.day {
+#day {
 
     font-size: 96px;
     margin:0;
     padding:0;
     line-height: 100%;
 }
-.date {
+#date {
     font-size: 64px;
     margin:0;
     padding:0;
@@ -64,15 +63,3 @@
     margin-left: 20%;
     line-height: 100%; 
 }
-
-
-.flex-main-item {
-    background-color:azure;
-}
-
-/* .flex-main-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-} */

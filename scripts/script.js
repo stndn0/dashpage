@@ -1,3 +1,6 @@
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
 function time() {
     var date = new Date()
     var hour = date.getHours();
@@ -23,12 +26,20 @@ function time() {
         }
     }
 
-    hour = update(hour);
+    // Append 0 to all single-digit time elements for formatting purposes (minute, seconds)
     minute = update(minute);
     second = update(second);
-    document.getElementById("time").innerText = hour + ":" + minute + " " + format;
-    // document.getElementById("time").innerText = hour + ":" + minute + ":" + second + " " + format;
 
+    // Get the current day
+    let day = days[date.getDay()];
+    document.getElementById("day").innerText = day;
+
+    // Get the current date and time
+    let month = months[date.getMonth()];
+    document.getElementById("date").innerText = month + " " + date.getDate();
+    document.getElementById("time").innerText = hour + ":" + minute + " " + format;
+
+    // Update the clock every second
     setTimeout(time, 1000)
 }
 
@@ -39,10 +50,6 @@ function update(t) {
     else {
         return t;
     }
-}
-
-function date() {
-    
 }
 
 
